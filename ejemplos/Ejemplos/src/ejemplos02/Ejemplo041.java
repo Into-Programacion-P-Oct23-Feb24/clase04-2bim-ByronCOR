@@ -19,13 +19,13 @@ public class Ejemplo041 {
 
     }
 
-    public static void obtenerMultiplicacion(int m1[][], int m2[][]) {
+    public static void obtenerMultiplicacion(int a[][], int b[][]) {
         int[][] arreglo3 = new int[3][3];
         int resultado;
-        for (int i = 0; i < m1.length; i++) {
+        for (int i = 0; i < a.length; i++) {
             String cadena = "";
-            for (int j = 0; j < m1[i].length; j++) {
-                resultado = m1[i][j] * m2[i][j];
+            for (int j = 0; j < a[i].length; j++) {
+                resultado = a[i][j] * b[i][j];
                 arreglo3[i][j] = resultado;
                 cadena = String.format("%s %d", cadena, arreglo3[i][j]);
             }
